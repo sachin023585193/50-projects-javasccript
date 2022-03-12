@@ -1,0 +1,40 @@
+    @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@200&display=swap');
+    * {
+        font-family: 'Comforter Brush', cursive;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background: burlywood;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .container {
+        font-size: 35px;
+        font-weight: 3000;
+        display: flex;
+        color: black;
+    }
+    
+    .box {
+        margin: 30px;
+        min-width: 150px;
+        text-align: center;
+    }
+    
+    .counter {
+        text-align: center;
+    }
+    
+    @media screen and (max-width: 580px) {
+        .container {
+            flex-direction: column;
+        }
+        .box {
+            margin: 10px;
+        }
+    }

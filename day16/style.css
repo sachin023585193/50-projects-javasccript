@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@200&family=Roboto:wght@100&display=swap');
+:root {
+    --light-blue: rgb(69, 130, 223);
+}
+
+body {
+    background-color: var(--light-blue);
+    color: white;
+    font-size: large;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.cup {
+    background-color: white;
+    height: 300px;
+    width: 150px;
+    position: relative;
+    font-size: larger;
+    border: 3px solid rgb(14, 14, 71);
+    border-radius: 0 0 50px 50px;
+    color: rgb(91, 91, 199);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 5px 0 5px;
+}
+
+.cup .precentage {
+    width: 100%;
+    background-color: rgba(69, 130, 223, .6);
+    display: block;
+    font-weight: bolder;
+    opacity: .7;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    color: blue;
+    font-weight: 900;
+}
+
+.cup .remaining {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cup .remaining small {
+    font-weight: 1000;
+}
+
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cup.small-cups {
+    height: 100px;
+    width: 40px;
+    margin: 6px;
+    border-radius: 0 0 20px 20px;
+    font-size: large;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.cup.small-cups.full {
+    background-color: var(--light-blue);
+    color: white;
+}

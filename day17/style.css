@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@200&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+    font-family: Poppins;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-track {
+    background: #373b69;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--primary-color);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+header input {
+    background: var(--secondary-color);
+    padding: 10px 10px;
+    border: 1px solid black;
+    font-size: large;
+    border-radius: 30px;
+    color: white;
+}
+
+input::placeholder {
+    color: rgb(207, 184, 184)
+}
+
+header input:focus {
+    outline: none;
+}
+
+main {
+    background: var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+main .movie {
+    margin: 5px;
+    width: 300px;
+    height: 530px;
+    overflow: hidden;
+    background: var(--primary-color);
+    color: white;
+    position: relative;
+    box-shadow: 0 0 4px black, 0 0 1px white;
+}
+
+main .movie movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+main h3 {
+    text-align: center;
+    margin: 0;
+}
+
+main .movie span {
+    background: #1f1e1e;
+    padding: 4px 7px;
+    font-weight: bold;
+    float: right;
+    margin: 0 5px 0 0;
+    border-radius: 3px;
+}
+
+main .movie span.red {
+    color: red;
+}
+
+main .movie span.green {
+    color: green;
+}
+
+main .movie span.yellow {
+    color: yellow;
+}
+
+main .movie .overview {
+    position: absolute;
+    color: black;
+    background: white;
+    bottom: 0;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    padding: 30px;
+    text-align: justify;
+    font-size: larger;
+    transition: transform .35s ease-in;
+    transform: translateY(179%);
+}
+
+main .movie:hover .overview {
+    transform: translateY(0);
+}

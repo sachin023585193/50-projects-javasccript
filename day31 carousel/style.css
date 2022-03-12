@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@200&family=Roboto:wght@100&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: maroon;
+}
+
+.carousal-container {
+    height: 500px;
+    width: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-contaienr {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    /* transition: transform .5s ease; */
+    transition: transform .5s linear;
+}
+
+.carousal-container button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: rgb(204, 204, 204);
+    font-size: 3rem;
+}
+
+.carousal-container button:focus {
+    outline: none;
+}
+
+.carousal-container button:active {
+    font-size: 3.4rem;
+}
+
+button#next {
+    left: 100%;
+    transform: translate(-100%, -50%);
+}

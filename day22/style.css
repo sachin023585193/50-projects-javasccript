@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@200&family=Roboto:wght@400&family=Poppins&display=swap');
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    overflow-x: hidden;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 50% auto 15%;
+    background: rgb(29, 28, 28);
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 55px;
+    z-index: 2;
+    transition: .5s ease;
+}
+
+.logo {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    background: white;
+    color: black;
+}
+
+nav.active {
+    height: 40px;
+}
+
+nav.active a {
+    color: black;
+}
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/bg.jpg");
+    background-size: cover;
+    background-position: top right;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-family: Roboto;
+}
+
+p {
+    font-family: Poppins;
+    text-align: center;
+    margin: 0;
+}
+
+.home .texts {
+    position: absolute;
+    z-index: 1;
+}
+
+.home::before {
+    content: "";
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    margin: 50px;
+}
+
+.content div {
+    max-width: 1000px;
+    margin: auto;
+    color: rgb(77, 74, 74);
+}
+
+.content div p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    height: 50px;
+    color: white;
+    background: rgb(29, 28, 28);
+}
+
+footer span {
+    line-height: 50px;
+}

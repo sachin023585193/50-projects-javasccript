@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@400&family=Roboto:wght@100&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: grey;
+    color: white;
+    font-size: larger;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+span {
+    color: orange;
+    border-right: 5px solid yellow;
+    animation: blink .6s infinite;
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: orange;
+    }
+}

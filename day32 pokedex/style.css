@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Lato:wght@400&family=Nunito:wght@400&family=Roboto:wght@100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+
+body {
+    background: linear-gradient(to left, rgb(184, 182, 98), rgb(78, 208, 218));
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.poke-container {
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pokemon {
+    background-color: rgb(216, 230, 203);
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(129, 117, 117);
+}
+
+.image-container {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info small {
+    display: block;
+    background-color: rgba(165, 161, 161, 0.3);
+    padding: 7px 10px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.info p {
+    display: block;
+    text-align: center;
+}
+
+.info .name {
+    font-weight: 1000;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info .type {
+    font-weight: 550;
+}

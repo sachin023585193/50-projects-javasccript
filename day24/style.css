@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@200&family=Roboto:wght@500&display=swap');
+body {
+    background-color: lightslategray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Roboto;
+}
+
+button {
+    background: rgb(34, 109, 207);
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+
+button:active {
+    transform: scale(.98);
+}
+
+.toast-container {
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.toast-message {
+    width: 90%;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 4px;
+}
+
+.toast-message.primary {
+    color: black;
+}
+
+.toast-message.danger {
+    color: red;
+}
+
+.toast-message.warning {
+    color: orange;
+}
+
+.toast-message.success {
+    color: green;
+}

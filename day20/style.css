@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Fruktur&family=Montserrat:wght@300&family=Nunito:wght@200&family=Roboto:wght@100&display=swap');
+* {
+    font-family: Roboto;
+}
+
+body {
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.button {
+    padding: 8px 30px;
+    font-size: larger;
+    font-weight: bold;
+    border: none;
+    background: rgb(76, 76, 102);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple .5s ease-out;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
